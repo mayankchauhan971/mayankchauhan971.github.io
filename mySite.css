@@ -261,9 +261,16 @@ img{
 	margin: 0 auto;
 	margin-bottom: 20px;
 	margin-top: 10px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid black;
 }
 
+.marginUnderHeadingSystem{
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border-bottom: 2px solid white;
+}
 
 .experienceParaBottomMargin{
 	margin-bottom: 8%;
