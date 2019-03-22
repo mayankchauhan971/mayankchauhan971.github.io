@@ -86,39 +86,6 @@ body, html{
 	display: none;
 }
 
-.blinkTop:nth-child(1){
-	animation-name: fade;
-	animation-fill-mode: both;
-	animation-iteration-count: infinite;
-	animation-duration: 2s;
-	animation-direction: normal;  
-}
-
-.blinkTop:nth-child(2){
-	animation-name: fade;
-	animation-fill-mode: both;
-	animation-iteration-count: infinite;
-	animation-duration: 2s;
-	animation-direction: normal;  
-}
-
-.blinkTop:nth-child(3){
-	animation-name: fade;
-	animation-fill-mode: both;
-	animation-iteration-count: infinite;
-	animation-duration: 2s;
-	animation-direction: normal;  
-}
-
-@keyframes fade{
-	0%,50% {
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
-
 .heading1{
 	font-size: 350%;
 	font-weight: 300;
@@ -398,12 +365,34 @@ img{
 
 }
 
+.blinkTop{
+  position: absolute;
+}
+.blinkTop:nth-child(1){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;  
+}
 
-/*
-#imgRha{
-	display: flex;
-	justify-content: center;
-}*/
+
+.blinkTop:nth-child(2){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes fade{
+    0%,50% {
+      opacity: 0;
+}
+    100%{
+      opacity: 1;
+  }
+}
 
 footer{
 	padding: 50px 0;
