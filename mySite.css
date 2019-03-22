@@ -30,6 +30,53 @@ body, html{
 	font-family: 'Roboto Condensed' , sans-serif;
 }
 
+.t2:before,
+.t2:after {
+	background-color: #000;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	vertical-align: middle;
+	width: 5%;
+}
+.t2:before {
+	right: 0.3em;
+	margin-left: -50%;
+}
+.t2:after {
+	left: 0.3em;
+	margin-right: -50%;
+}
+
+.t1{
+	font-style: italic;
+	letter-spacing: 4px;
+}
+
+@media (max-width: 570px){
+	.bgImage{
+		/*padding-le*//*ft: 500px;
+		padding-right: 500px;*/
+		background-position: 60% 60%;
+	}
+
+	/*change the border*/
+	.t2:before,
+	.t2:after{
+		display: none;
+	}
+	.caption{
+		top: 25%;
+	}
+
+	.t2 span{
+		display: block;
+		letter-spacing: 3px;
+		font-size: 10vw;
+	}
+}
+
 .blinkTop{
 	line-height: 1.2em;
 	font-family: 'Roboto Condensed' , sans-serif;
@@ -70,30 +117,6 @@ body, html{
 	100%{
 		opacity: 1;
 	}
-}
-
-.t2:before,
-.t2:after {
-	background-color: #000;
-	content: "";
-	display: inline-block;
-	height: 2px;
-	position: relative;
-	vertical-align: middle;
-	width: 5%;
-}
-.t2:before {
-	right: 0.3em;
-	margin-left: -50%;
-}
-.t2:after {
-	left: 0.3em;
-	margin-right: -50%;
-}
-
-.t1{
-	font-style: italic;
-	letter-spacing: 4px;
 }
 
 .heading1{
@@ -325,14 +348,14 @@ img{
 }
 
 ::-webkit-input-placeholder {
-  color: #a9a9a9;
-  font-size: 13px;
-  text-align: justify;
+	color: #a9a9a9;
+	font-size: 13px;
+	text-align: justify;
 }
 ::-moz-placeholder {
-  color: #a9a9a9;
-  font-size: 13px;
-  text-align: justify;
+	color: #a9a9a9;
+	font-size: 13px;
+	text-align: justify;
 }
 
 .socialLinks{
@@ -356,6 +379,16 @@ img{
 
 .fa-linkedin{
 	color: #0077e9;
+}
+
+@media (max-width: 570px){
+	.marginUnderHeadingAbout{
+		width: 25%;
+		margin: 0 auto;
+		/*margin-top: 5px;*/
+		border-bottom: 4px solid black;
+	}
+
 }
 
 footer{
