@@ -398,6 +398,13 @@ img{
 
 }
 
+
+/*
+#imgRha{
+	display: flex;
+	justify-content: center;
+}*/
+
 footer{
 	padding: 50px 0;
 	background-color : #c8ccd1;
